@@ -28,7 +28,7 @@ body {
     width: 24px;
     height: 24px;
     background-color: transparent;
-    border: 2px dashed black;
+    border: 5px dashed black;
     border-radius: 50%;
     cursor: pointer;
     transform: translate(-50%, -50%);
