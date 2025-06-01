@@ -53,3 +53,10 @@ body {
 .viewer.show {
     display: flex;
 }
+@media (max-width: 768px) {
+  .hotspot,
+  img[src="hotspot.png"] {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
