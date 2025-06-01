@@ -3,7 +3,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Desenho Interativo</title>
+    <title>Desenho Interativo com Ícones</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,13 +11,22 @@
         <img src="percurso.jpg" alt="Desenho do percurso" class="base-image">
 
         <!-- Ponto 1: Infinito -->
-        <div class="hotspot" style="top: 38%; left: 58%;" onclick="showMedia('ladeira.jpg')"></div>
+        <img src="hotspot.png"
+             style="position: absolute; top: 38%; left: 50%; width: 24px; height: 24px; cursor: pointer; transform: translate(-50%, -50%);"
+             onclick="showMedia('ladeira.jpg')"
+             alt="hotspot">
 
         <!-- Ponto 2: Ladeira abaixo -->
-        <div class="hotspot" style="top: 56%; left: 77%;" onclick="showMedia('vende_tudo.jpg')"></div>
+        <img src="hotspot.png"
+             style="position: absolute; top: 56%; left: 77%; width: 24px; height: 24px; cursor: pointer; transform: translate(-50%, -50%);"
+             onclick="showMedia('vende_tudo.jpg')"
+             alt="hotspot">
 
         <!-- Ponto 3: Banco de xadrez -->
-        <div class="hotspot" style="top: 64%; left: 85%;" onclick="showMedia('banco.jpg')"></div>
+        <img src="hotspot.png"
+             style="position: absolute; top: 64%; left: 85%; width: 24px; height: 24px; cursor: pointer; transform: translate(-50%, -50%);"
+             onclick="showMedia('banco.jpg')"
+             alt="hotspot">
     </div>
 
     <div id="mediaViewer" class="viewer" onclick="closeMedia()">
