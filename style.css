@@ -1,20 +1,28 @@
-
 body {
     margin: 0;
     padding: 0;
-    background: #fafafa;
+    background-color: black;
     font-family: sans-serif;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
+
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: max-content;
+    margin: 0 auto;
     position: relative;
-    width: 100%;
-    max-width: 100%;
-    overflow: auto;
 }
+
 .base-image {
-    width: 100%;
-    height: auto;
+    height: 90vh;
+    width: auto;
+    display: block;
 }
+
 .hotspot {
     position: absolute;
     width: 24px;
@@ -24,6 +32,7 @@ body {
     cursor: pointer;
     transform: translate(-50%, -50%);
 }
+
 .viewer {
     display: none;
     position: fixed;
@@ -34,10 +43,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .viewer img {
     max-width: 90%;
     max-height: 90%;
 }
+
 .viewer.show {
     display: flex;
 }
