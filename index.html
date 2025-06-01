@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Desenho Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/percurso.jpg" alt="Desenho do percurso" class="base-image">
+
+        <!-- Ponto 1: Infinito -->
+        <div class="hotspot" style="top: 38%; left: 50%;" onclick="showMedia('media/ladeira.jpg')"></div>
+
+        <!-- Ponto 2: Ladeira abaixo -->
+        <div class="hotspot" style="top: 56%; left: 77%;" onclick="showMedia('media/vende_tudo.jpg')"></div>
+
+        <!-- Ponto 3: Banco de xadrez -->
+        <div class="hotspot" style="top: 64%; left: 85%;" onclick="showMedia('media/banco.jpg')"></div>
+    </div>
+
+    <div id="mediaViewer" class="viewer" onclick="closeMedia()">
+        <img id="mediaContent" src="" alt="Mídia">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
