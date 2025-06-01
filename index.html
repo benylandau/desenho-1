@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Desenho Interativo com Ícones</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
@@ -12,19 +13,22 @@
 
         <!-- Ponto 1: Infinito -->
         <img src="hotspot.png"
-             style="position: absolute; top: 38%; left: 50%; width: 24px; height: 24px; cursor: pointer; transform: translate(-50%, -50%);"
+             class="hotspot"
+             style="top: 38%; left: 50%;"
              onclick="showMedia('ladeira.jpg')"
              alt="hotspot">
 
         <!-- Ponto 2: Ladeira abaixo -->
         <img src="hotspot.png"
-             style="position: absolute; top: 56%; left: 77%; width: 24px; height: 24px; cursor: pointer; transform: translate(-50%, -50%);"
+             class="hotspot"
+             style="top: 56%; left: 77%;"
              onclick="showMedia('vende_tudo.jpg')"
              alt="hotspot">
 
         <!-- Ponto 3: Banco de xadrez -->
         <img src="hotspot.png"
-             style="position: absolute; top: 64%; left: 85%; width: 24px; height: 24px; cursor: pointer; transform: translate(-50%, -50%);"
+             class="hotspot"
+             style="top: 64%; left: 85%;"
              onclick="showMedia('banco.jpg')"
              alt="hotspot">
     </div>
