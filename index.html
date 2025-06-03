@@ -20,7 +20,7 @@
 
         .header {
             position: absolute;
-            bottom: 1.5em;
+            bottom: 6.5em;
             left: 2em;
         }
 
@@ -31,7 +31,7 @@
         }
 
         .footer {
-            padding: 6em 2em 2em 2em;
+            padding: 2em;
         }
 
         .link-card {
@@ -41,30 +41,36 @@
         }
 
         .link-card a {
-            color: white;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
             font-size: 1.6em;
             font-weight: 300;
-            text-decoration: none;
-            padding-right: 1em;
+            color: white;
         }
 
-        .link-card a:hover {
-            text-decoration: underline;
+        .link-card a:hover .thumbnail,
+        .link-card a:hover span {
+            filter: brightness(1);
+        }
+
+        .link-card span {
+            padding-right: 1em;
+            display: inline-block;
+            transition: filter 0.3s ease;
         }
 
         .thumbnail {
             width: 120px;
-            height: 80px;
+            height: auto;
+            aspect-ratio: 3 / 2;
             background-image: url('percurso_thumb.jpg');
-            background-size: cover;
+            background-size: contain;
+            background-repeat: no-repeat;
             background-position: center;
             filter: brightness(0.3);
             transition: filter 0.3s ease;
             border-radius: 4px;
-        }
-
-        .thumbnail:hover {
-            filter: brightness(1);
         }
     </style>
 </head>
@@ -75,8 +81,10 @@
 
     <div class="footer">
         <div class="link-card">
-            <a href="desenho1.html">Sumarezinho / Vila Madalena</a>
-            <div class="thumbnail"></div>
+            <a href="desenho1.html">
+                <span>Sumarezinho / Vila Madalena</span>
+                <div class="thumbnail"></div>
+            </a>
         </div>
     </div>
 </body>
