@@ -5,20 +5,33 @@
     <meta charset="UTF-8">
     <title>Percursos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             background-color: black;
-            font-family: sans-serif;
+            font-family: 'Oswald', sans-serif;
+            height: 100vh;
+            color: white;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            height: 100vh;
-            color: white;
+        }
+
+        .header {
+            position: absolute;
+            bottom: 1.5em;
+            left: 2em;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-weight: 400;
         }
 
         .footer {
-            padding: 2em;
+            padding: 6em 2em 2em 2em;
         }
 
         .link-card {
@@ -29,7 +42,8 @@
 
         .link-card a {
             color: white;
-            font-size: 1.5em;
+            font-size: 1.6em;
+            font-weight: 300;
             text-decoration: none;
             padding-right: 1em;
         }
@@ -55,12 +69,15 @@
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Galeria de Percursos</h1>
+    </div>
+
     <div class="footer">
         <div class="link-card">
             <a href="desenho1.html">Sumarezinho / Vila Madalena</a>
             <div class="thumbnail"></div>
         </div>
-        <!-- Adicione mais link-cards aqui -->
     </div>
 </body>
 </html>
