@@ -31,8 +31,9 @@
       font-size: 1.6em;
       font-weight: 300;
       margin-right: 1.5em;
-      width: 200px;
+      width: 260px;
       flex-shrink: 0;
+      transition: text-decoration 0.3s ease;
     }
 
     .item a {
@@ -44,7 +45,7 @@
 
     .thumb {
       height: auto;
-      max-width: 60vw;
+      max-width: 30vw;
       filter: brightness(0.3);
       transition: filter 0.3s ease;
     }
@@ -52,9 +53,9 @@
     .item a:hover .thumb,
     .item a:hover .item-title {
       filter: brightness(1);
+      text-decoration: underline;
     }
 
-    /* MOBILE VERSION */
     @media (max-width: 768px) {
       .item {
         flex-direction: column;
@@ -81,14 +82,5 @@
       <img src="percurso_thumb.jpg" alt="Thumbnail percurso 1" class="thumb">
     </a>
   </div>
-
-  <!-- Modelo para mais desenhos:
-  <div class="item">
-    <a href="desenho2.html">
-      <div class="item-title">Desenho 2</div>
-      <img src="thumb2.jpg" alt="Thumbnail percurso 2" class="thumb">
-    </a>
-  </div>
-  -->
 </body>
 </html>
