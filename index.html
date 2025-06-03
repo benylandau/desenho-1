@@ -3,43 +3,64 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Galeria de Percursos</title>
+    <title>Percursos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background-color: black;
-            color: white;
-            font-family: sans-serif;
             margin: 0;
+            background-color: black;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100vh;
+            color: white;
+        }
+
+        .footer {
             padding: 2em;
-            text-align: center;
         }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 1em;
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5em;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin: 1em 0;
-        }
-        a {
+
+        .link-card a {
+            color: white;
+            font-size: 1.5em;
             text-decoration: none;
-            color: #00ccff;
-            font-size: 1.2em;
+            padding-right: 1em;
         }
-        a:hover {
+
+        .link-card a:hover {
             text-decoration: underline;
+        }
+
+        .thumbnail {
+            width: 120px;
+            height: 80px;
+            background-image: url('percurso_thumb.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.3);
+            transition: filter 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .thumbnail:hover {
+            filter: brightness(1);
         }
     </style>
 </head>
 <body>
-    <h1>Galeria de Percursos</h1>
-    <ul>
-        <li><a href="desenho1.html">Sumarezinho/Vila Madalena</a></li>
-        <!-- Aqui você pode adicionar outros desenhos futuramente -->
-    </ul>
+    <div class="footer">
+        <div class="link-card">
+            <a href="desenho1.html">Sumarezinho / Vila Madalena</a>
+            <div class="thumbnail"></div>
+        </div>
+        <!-- Adicione mais link-cards aqui -->
+    </div>
 </body>
 </html>
