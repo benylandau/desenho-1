@@ -1,1 +1,29 @@
-<!-- Página do percurso Sumarezinho -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sumarezinho</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="hotspot_legendas.js" defer></script>
+  <script src="viewer.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <img src="percurso.jpg" class="base-image" alt="Desenho Sumarezinho">
+
+    <img src="hotspot.png" class="hotspot" style="top: 35%; left: 28%;" onclick="showViewer('banco.jpg')">
+    <img src="hotspot.png" class="hotspot" style="top: 50%; left: 42%;" onclick="showViewer('vende_tudo.jpg')">
+    <img src="hotspot.png" class="hotspot" style="top: 68%; left: 64%;" onclick="showViewer('ladeira.jpg')">
+    <img src="hotspot.png" class="hotspot" style="top: 80%; left: 78%;" onclick="showViewer('lacerda.jpg')">
+
+  </div>
+
+  <div class="viewer" id="viewer">
+    <div class="viewer-content">
+      <img id="viewer-image" src="" alt="">
+      <p id="viewer-caption"></p>
+    </div>
+  </div>
+</body>
+</html>
