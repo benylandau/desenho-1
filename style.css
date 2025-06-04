@@ -1,1 +1,59 @@
-/* Estilos da galeria */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.galeria {
+  padding: 2em;
+}
+
+.titulo {
+  font-weight: 400;
+  font-size: 2.5em;
+  margin-bottom: 2em;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.item a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.item a:hover .thumb,
+.item a:hover .label {
+  filter: brightness(1);
+}
+
+.thumb {
+  max-width: 30vw;
+  height: auto;
+  margin-left: 1.5em;
+  filter: brightness(0.3);
+}
+
+.label {
+  font-weight: 300;
+  font-size: 1.6em;
+  transition: text-decoration 0.3s ease;
+}
+
+.item a:hover .label {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: left;
+  padding: 1em 2em;
+  font-size: 0.9em;
+  color: #aaa;
+}
