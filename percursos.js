@@ -1,4 +1,3 @@
-// Lista de percursos carregada automaticamente
 const percursos = [
   {
     nome: "Sumarezinho / Vila Madalena",
