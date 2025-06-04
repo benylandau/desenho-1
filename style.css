@@ -1,93 +1,62 @@
 body {
-  background-color: black;
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: sans-serif;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
-.galeria {
-  padding: 2em;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: max-content;
+    margin: 0 auto;
+    position: relative;
 }
 
-.titulo {
-  font-weight: 400;
-  font-size: 2.5em;
-  margin-bottom: 2em;
+.base-image {
+    height: 60vh;
+    width: auto;
+    display: block;
 }
 
-.item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2em;
-}
-
-.item a {
-  text-decoration: none;
-  color: white;
-  display: flex;
-  align-items: center;
-}
-
-.item a:hover .thumb,
-.item a:hover .label {
-  filter: brightness(1);
-}
-
-.thumb {
-  max-width: 30vw;
-  height: auto;
-  margin-left: 1.5em;
-  filter: brightness(0.3);
-}
-
-.label {
-  font-weight: 300;
-  font-size: 1.6em;
-  transition: text-decoration 0.3s ease;
-}
-
-.item a:hover .label {
-  text-decoration: underline;
-}
-
-footer {
-  text-align: left;
-  padding: 1em 2em;
-  font-size: 0.9em;
-  color: #aaa;
+.hotspot {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 4px dashed blue;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
 }
 
 .viewer {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.8);
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
 }
 
 .viewer img {
-  max-width: 90%;
-  max-height: 80%;
+    max-width: 90%;
+    max-height: 90%;
 }
 
-.viewer p {
-  margin-top: 1em;
-  font-size: 1em;
-  color: #ccc;
-  text-align: center;
-  max-width: 90%;
-}
-
-.viewer a {
-  color: #99ccff;
-  display: block;
-  margin-top: 0.5em;
-}
 .viewer.show {
-  display: flex;
+    display: flex;
+}
+@media (max-width: 768px) {
+  .hotspot,
+  img[src="hotspot.png"] {
+    width: 45px !important;
+    height: 45px !important;
+  }
 }
