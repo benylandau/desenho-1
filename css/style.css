@@ -11,9 +11,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 85vh;             /* reduz a altura do bloco total */
     width: max-content;
-    margin: 0 auto;
+    margin: 7.5vh auto;       /* cria respiro acima e abaixo */
     position: relative;
 }
 
