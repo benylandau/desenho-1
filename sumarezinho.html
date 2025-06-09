@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
-    <title>Desenho Interativo com Ícones</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Desenho Interativo com Ícones</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="container">
-        <img src="img/sumarezinho/sumarezinho.jpg" alt="Desenho do percurso" class="base-image">
+  <div class="container">
+    <img src="img/sumarezinho/sumarezinho.jpg" alt="Desenho do percurso" class="base-image">
 
-        <!-- Ponto 1: Infinito -->
-        <img src="hotspot.png"
-             class="hotspot"
-             style="top: 40%; left: 58%;"
-             onclick="showMedia('img/sumarezinho/ladeira.jpg')"
-             alt="hotspot">
+    <!-- Ponto 1: Infinito -->
+    <img src="hotspot.png"
+         class="hotspot"
+         style="top: 40%; left: 58%;"
+         onclick="showMedia('img/sumarezinho/ladeira.jpg')"
+         alt="hotspot">
 
-        <!-- Ponto 2: Ladeira abaixo -->
-        <img src="hotspot.png"
-             class="hotspot"
-             style="top: 56%; left: 78%;"
-             onclick="showMedia('img/sumarezinho/vende_tudo.jpg')"
-             alt="hotspot">
+    <!-- Ponto 2: Ladeira abaixo -->
+    <img src="hotspot.png"
+         class="hotspot"
+         style="top: 56%; left: 78%;"
+         onclick="showMedia('img/sumarezinho/vende_tudo.jpg')"
+         alt="hotspot">
 
-        <!-- Ponto 3: Banco de xadrez -->
-        <img src="hotspot.png"
-             class="hotspot"
-             style="top: 67%; left: 85%;"
-             onclick="showMedia('img/sumarezinho/banco.jpg')"
-             alt="hotspot">
-    
-        <!-- Ponto 4: Entrada Lacerda -->
-        <img src="hotspot.png"
-             class="hotspot"
-             style="top: 73%; left: 36%;"
-             onclick="showMedia('img/sumarezinho/lacerda.jpg')"
-             alt="hotspot">
+    <!-- Ponto 3: Banco de xadrez -->
+    <img src="hotspot.png"
+         class="hotspot"
+         style="top: 67%; left: 85%;"
+         onclick="showMedia('img/sumarezinho/banco.jpg')"
+         alt="hotspot">
 
-    </div>
+    <!-- Ponto 4: Entrada Lacerda -->
+    <img src="hotspot.png"
+         class="hotspot"
+         style="top: 73%; left: 36%;"
+         onclick="showMedia('img/sumarezinho/lacerda.jpg')"
+         alt="hotspot">
+  </div>
 
-    <div id="mediaViewer" class="viewer" onclick="closeMedia()">
-        <img id="mediaContent" src="" alt="Mídia">
-    </div>
+  <div id="mediaViewer" class="viewer" onclick="closeMedia()">
+    <img id="mediaContent" src="" alt="Mídia">
+  </div>
 
-    <script src="js/script.js"></script>
-      
+  <script src="js/script.js"></script>
+
+  <footer style="position: fixed; bottom: 0; width: 100%; text-align: center; background-color: black; color: white; padding: 8px; font-family: Oswald; font-size: 12px; z-index: 999;">
+    Beny Landau (2025)
+  </footer>
 </body>
 </html>
