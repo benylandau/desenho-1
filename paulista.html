@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Desenho Interativo – Paulista</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <img src="img/paulista/paulista.jpg" alt="Desenho do percurso Paulista" class="base-image">
+
+    <!-- Hotspot 1 -->
+    <img src="hotspot.png"
+         class="hotspot"
+         style="top: 35%; left: 60%;"
+         onclick="showMedia('img/paulista/1.jpg')"
+         alt="hotspot">
+
+    <!-- Hotspot 2 -->
+    <img src="hotspot.png"
+         class="hotspot"
+         style="top: 48%; left: 72%;"
+         onclick="showMedia('img/paulista/2.jpg')"
+         alt="hotspot">
+
+    <!-- Hotspot 3 -->
+    <img src="hotspot.png"
+         class="hotspot"
+         style="top: 63%; left: 44%;"
+         onclick="showMedia('img/paulista/3.jpg')"
+         alt="hotspot">
+
+    <!-- Hotspot 4 -->
+    <img src="hotspot.png"
+         class="hotspot"
+         style="top: 52%; left: 28%;"
+         onclick="showMedia('img/paulista/4.jpg')"
+         alt="hotspot">
+  </div>
+
+  <div id="mediaViewer" class="viewer" onclick="closeMedia()">
+    <img id="mediaContent" src="" alt="Mídia">
+  </div>
+
+  <script src="js/script.js"></script>
+
+  <footer style="position: fixed; bottom: 0; width: 100%; text-align: center; background-color: black; color: white; padding: 8px; font-family: Oswald; font-size: 12px; z-index: 999;">
+    Beny Landau (2025)
+  </footer>
+</body>
+</html>
