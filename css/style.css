@@ -62,7 +62,7 @@ body {
     height: 45px !important;
   }
 .ficha-livre {
-  color: white;
+  color: white !important;
   font-family: Oswald, sans-serif;
   font-size: 13px;
   margin: 1.5em 2em 2em;
