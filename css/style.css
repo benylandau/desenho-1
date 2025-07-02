@@ -76,20 +76,24 @@ div.ficha-livre p,
 div.ficha-livre p strong {
   color: white !important;
 }
-.voltar-galeria {
+    .voltar-galeria {
+  all: unset;
   position: fixed;
   bottom: 8px;
   left: 16px;
   font-family: 'Oswald', sans-serif;
   font-size: 12px;
-  color: white !important;
+  color: white;
   text-decoration: none;
   z-index: 999;
+  cursor: pointer;
 }
 
 .voltar-galeria:hover {
   text-decoration: underline;
 }
+
+
 
 
 
