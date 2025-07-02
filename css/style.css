@@ -60,7 +60,6 @@ body {
   img[src="hotspot.png"] {
     width: 45px !important;
     height: 45px !important;
-}
 .ficha-livre,
 .ficha-livre strong {
   color: white !important;
@@ -69,9 +68,12 @@ body {
   margin: 1.5em 2em 2em;
   line-height: 1.4em;
   max-width: 300px;
-  padding-left: 2em;
 }
 
+.ficha-livre {
+  padding-left: 2em;
+  margin-top: 1.5em;
+}
 div.ficha-livre,
 div.ficha-livre p,
 div.ficha-livre p strong {
