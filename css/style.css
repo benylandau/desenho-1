@@ -133,3 +133,20 @@ div.ficha-livre p strong {
         max-width: 90vw;
     }
 }
+.viewer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.viewer.show {
+  display: flex;
+}
+
