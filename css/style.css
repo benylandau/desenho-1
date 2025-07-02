@@ -69,6 +69,7 @@ body {
   margin: 1.5em 2em 2em;
   line-height: 1.4em;
   max-width: 300px;
+  padding-left: 2em;
 }
 
 div.ficha-livre,
